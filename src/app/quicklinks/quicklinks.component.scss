@@ -1,0 +1,23 @@
+.container {
+    margin: 0;
+    margin-top: 35px;
+}
+
+.box {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.quicklink {
+    flex: initial;
+    background-size: 434px;
+    height: 280px;
+    width: 434px;
+}
+
+.quicklink:hover {
+    border: 1px solid white;
+    transition: 0.5s;
+}

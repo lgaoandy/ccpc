@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: red;
+    font-weight: 1000;
+    transition: 0.7s;
+}

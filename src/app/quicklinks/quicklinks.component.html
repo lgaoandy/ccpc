@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="box">
+        <a href *ngFor="let quicklink of quicklinks">
+            <div [id]="quicklink.id" class="quicklink"
+                [ngStyle]="{'background-image': hover==quicklink.id ? quicklink.hoverURL : quicklink.url}"
+                hover="false"
+                (mouseover)="this.hover=quicklink.id"
+                (mouseleave)="this.hover=false">
+            </div>
+        </a>
+
+        <!-- <a href><div id="kids" class="quicklink"></div></a>
+        <a href><div id="students" class="quicklink"></div></a>
+        <a href><div id="youngadults" class="quicklink"></div></a>
+        <a href><div id="adults" class="quicklink"></div></a>
+        <a href><div id="daycamp" class="quicklink"></div></a>
+        <a href><div id="pastorkat" class="quicklink"></div></a> -->
+    </div>
+</div>
