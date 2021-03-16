@@ -10,14 +10,22 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-width: 50%;
+    max-width: 45%;
     line-height: 18px;
-}
 
-.footer-container > div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    &> div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        color: #959595;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #000000;
+        transition: 0.3s;
+    }
 }
 
 h4 {
@@ -27,12 +35,32 @@ h4 {
     font-size: 16px;
 }
 
-.footer-container a {
-    color: #959595;
-    text-decoration: none;
+@media only screen and (max-width: 1400px) {
+    .footer-container {
+        max-width: 55%;
+    }
 }
 
-.footer-container a:hover {
-    color: #000000;
-    transition: 0.3s;
+@media only screen and (max-width: 1050px) {
+    .footer-container {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-container {
+        max-width: 85%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 60px 40px;
+
+        div {
+            display: flex;
+        }
+    }
 }

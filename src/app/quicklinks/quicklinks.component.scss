@@ -15,9 +15,27 @@
     background-size: 434px;
     height: 280px;
     width: 434px;
+
+    &:hover {
+        border: 1px solid white;
+        transition: 0.5s;
+    }
 }
 
-.quicklink:hover {
-    border: 1px solid white;
-    transition: 0.5s;
+@media only screen and (max-width: 1325px){
+    .box {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .box {
+        grid-template-columns: auto;
+    }
+
+    .quicklink {
+        background-size: 90vw;
+        height: 58vw;
+        width: 90vw;
+    }
 }
